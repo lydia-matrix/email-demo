@@ -1,0 +1,15 @@
+# Vue.js (my-vue-app)
+my-vue-app/node_modules/
+my-vue-app/dist/
+my-vue-app/.env
+
+# Spring Boot (email-demo)
+email-demo/target/
+email-demo/.idea/
+email-demo/*.iml
+email-demo/*.log
+email-demo/.env
+
+# OS별 불필요 파일
+.DS_Store
+Thumbs.db

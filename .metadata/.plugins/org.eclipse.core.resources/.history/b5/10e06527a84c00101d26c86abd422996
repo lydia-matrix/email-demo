@@ -1,0 +1,7 @@
+package com.example.emaildemo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmailLogRepository extends JpaRepository<T, ID> {
+
+}
