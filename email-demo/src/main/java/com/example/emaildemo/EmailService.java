@@ -4,11 +4,11 @@ import java.time.LocalDateTime;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class EmailService {
@@ -21,6 +21,7 @@ public class EmailService {
     @Autowired
     private EmailLogRepository emailLogRepository;
 
+    @Transactional
     public void sendEmail(String to, String subject, String text){
         
         logger.info("Sending email - to: {}, subject: {}, content: {}", to, subject, text);
